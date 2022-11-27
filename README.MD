@@ -31,15 +31,17 @@ Disable self registration: Tick (IF YOU DON’T WANT USER TO CREATE ACCOUNT THEM
 <h1> Congratulations GITEA INSTALLED SUCCESFULLY :) </h1>
 
 
-FOR DEMO PURPOSE:
+	
+	 
+<h1> FOR DEMO PURPOSE: </h1>
 Register new user on home page with named user1
 
 Create new repository with named demo-repo
 
 IN DEVELOPER VM:
 #mkdir project1
-#vim
-<h1> hello web </h1>
+#vim index.html
+hello web 
 #git init
 #git add .
 #git commit -a -m “first commit”
