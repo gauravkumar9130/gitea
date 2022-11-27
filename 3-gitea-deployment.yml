@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ namespace: gitea
+ name: gitea-deployment
+spec:
+ replicas: 1
+ selector:
+  matchLabels: 
+   app: gitea
+ template:
+  metadata:
+    labels:
+     app: gitea
+  spec:
+   volumes:
+   - name: myvol
+     persistentVolumeClaim:
+      claimName: gitea-pvc
+   containers:
+   - name: gita
+     image: gitea/gitea:latest
+     volumeMounts:
+     - name: myvol
+       mountPath: "/data"
