@@ -1,7 +1,7 @@
 <h1> GITEA Installation: </h1>
-#git clone https://github.com/gauravkumar9130/gitea
-#cd gitea
-#kubectl create -f .
+git clone https://github.com/gauravkumar9130/gitea
+cd gitea
+kubectl create -f .
 
 <h1> To verify: </h1>
 #kubectl get pods -n gitea
