@@ -1,21 +1,26 @@
+<h1> INSTALLATION GITEA: </h1>
 #git clone https://github.com/gauravkumar9130/gitea
 #cd gitea
 #kubectl create -f .
 
-To verify:
+<h1> To verify: </h1>
 #kubectl get pods -n gitea
 #kubectl get svc -n gitea
 
-Configure Gitea:
+<h1> Configure Gitea: </h1>
 #kubectl get svc -n gitea
 COPY LOAD BALANCER SERVICE IP AND OPEN WITH 3000 PORT NUMBER OR IF USING NODE PORT THEN USE ANY WORKER NODE IP WITH 3000 PORT NUMBER.
 
-It will open configuration page:
+<h2> It will open configuration page: <h2> 
 Database type: SQLite3
 Site TITLE: Company Name
+Server Base URL: (if using load balancer: http://<LOAD BALANCER IP>:3000) OR (if using node port: http://<ANY WOKER IP>:3000)
 Git Base URL: (if using load balancer: http://<LOAD BALANCER IP>:3000) OR (if using node port: http://<ANY WOKER IP>:3000)
 
-Administrator Account Settings: BELOW USER WILL BECOME ADMINISTRATOR
+<h2> Server and Third Party Service Settings: </h2>
+Disable self registration: Tick (IF YOU DON’T WANT USER TO CREATE ACCOUNT THEMSELVES ONLY ADMIN WILL BE ALLOWED)
+
+<h2> Administrator Account Settings: BELOW USER WILL BECOME ADMINISTRATOR </h2>
 	Administrator username: git-admin
 	Password: admin
 	Confirm password: admin
@@ -23,7 +28,7 @@ Administrator Account Settings: BELOW USER WILL BECOME ADMINISTRATOR
 
 	Click on “Install Gitea”
 
-Congratulations :)
+<h1> Congratulations GITEA INSTALLED SUCCESFULLY :) </h1>
 
 
 FOR DEMO PURPOSE:
