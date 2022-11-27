@@ -11,7 +11,7 @@
 #kubectl get svc -n gitea
 COPY LOAD BALANCER SERVICE IP AND OPEN WITH 3000 PORT NUMBER OR IF USING NODE PORT THEN USE ANY WORKER NODE IP WITH 3000 PORT NUMBER.
 
-<h2> It will open configuration page: <h2> 
+<h2> It will open configuration page: </h2> 
 Database type: SQLite3
 Site TITLE: Company Name
 Server Base URL: (if using load balancer: http://<LOAD BALANCER IP>:3000) OR (if using node port: http://<ANY WOKER IP>:3000)
