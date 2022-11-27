@@ -1,4 +1,5 @@
-<h1> INSTALLATION GITEA: </h1>
+<h1> GITEA Installation: </h1>
+
 #git clone https://github.com/gauravkumar9130/gitea
 #cd gitea
 #kubectl create -f .
